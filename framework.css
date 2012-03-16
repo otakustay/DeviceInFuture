@@ -1,0 +1,24 @@
+body {
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#viewport {
+    /* 边缘 */
+    border: 20px solid #DAD9DE;
+    border-radius: 20px;
+    /* iPad2分辨率 */
+    width: 1024px;
+    height: 768px;
+    /* 绝对居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -404px 0 0 -532px;
+}

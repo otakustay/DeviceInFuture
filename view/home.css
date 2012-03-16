@@ -1,0 +1,122 @@
+/*
+ * 上部网格形式展现各设备，占708px
+ * 底部导航区域，占60px
+ */
+#deviceOverview {
+    height: 688px;
+}
+#deviceCategory {
+    height: 80px;
+}
+
+#deviceOverview>ul {
+    /* 清除浮动 */
+    overflow: hidden;
+}
+#deviceOverview>ul>li {
+    /* 水平排列 */
+    float: left;
+    position: relative;
+
+    /* 一行4个 */
+    width: 215px;
+    height: 208px;
+    padding: 10px 20px;
+    border: 2px solid #01AEEE;
+    margin: -2px 0 0 -2px;
+}
+#deviceOverview li:nth-child(4n + 1) {
+    border-left: 0;
+}
+#deviceOverview li:nth-child(4n) {
+    border-right: 0;
+}
+#deviceOverview img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    -webkit-filter: grayscale(1);
+}
+
+.device-name {
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+}
+.device-status {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.device-status li {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 8px 0;
+    text-indent: -500em;
+}
+
+.plug-status {
+    height: 48px;
+}
+.plug-status span {
+    display: block;
+    width: 168px;
+    height: 48px;
+    text-indent: -500em;
+}
+.unplugged {
+    background-image: url(../images/plug-unplugged.png);
+}
+.plugged {
+    background-image: url(../images/plug-plugged.png);
+}
+
+#deviceCategory ul {
+    /* 清除浮动 */
+    overflow: hidden;
+}
+#deviceCategory li {
+    /* 水平排列 */
+    float: left;
+
+    border: 2px solid #01AEEE;
+    margin-left: -2px;
+    padding: 2px 20px;
+
+    text-align: center;
+}
+#deviceCategory li:first-child {
+    margin: 0;
+}
+#deviceCategory li.active {
+    color: green;
+    background-color: #eeeeff;
+}
+#deviceCategory img {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+}
+#deviceCategory span {
+    display: block;
+    line-height: 20px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+/* 警告图标 */
+.status-unplugged {
+    background-image: url(../images/status-unplugged.png);
+}
+.status-disconnect {
+    background-image: url(../images/status-disconnect.png);
+}
+.status-broken {
+    background-image: url(../images/status-broken.png);
+}
+.status-message {
+    background-image: url(../images/status-message.png);
+}
